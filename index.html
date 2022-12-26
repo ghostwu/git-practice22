@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>this is a test</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			oBtn = document.getElementById( "test" );
+			oBox = document.getElementById( "box" );
+			oBtn.onclick = function(){
+				if( oBox.style.display == "block" ) {
+					oBox.style.display = "none";
+				}else{
+					oBox.style.display = "block";
+				}
+			}	
+		}
+	</script>
+	<style type="text/css">
+		div{
+			width:200px;
+			height:200px;
+			background:red;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<button id="test">this is a test</button>
+	<div id="box"></div>
+</body>
+</html>
